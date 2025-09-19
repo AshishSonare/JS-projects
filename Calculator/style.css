@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  border: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 50vw;
+  height: 100vh;
+}
+
+.inputBox input {
+  width: 100%;
+  min-height: 20vmin;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  padding: 10px;
+  text-align: right;
+  background-color: #e9ecef;
+  margin-bottom: 6vmin;
+}
+
+.main {
+  display: grid;
+  height: 65vmin;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.num {
+  background-color: #dee2e6;
+  color: #212529;
+}
+
+.functn {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+.equal {
+  background-color: #198754;
+  color: #ffffff;
+  grid-column: span 1;
+}
+
+button:hover {
+  opacity: 0.85;
+}
